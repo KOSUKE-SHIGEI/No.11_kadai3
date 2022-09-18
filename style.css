@@ -1,0 +1,154 @@
+body{
+  background-color: rgba(0, 162, 255, 0.507);
+}
+
+ul{
+  list-style: none;
+}
+
+/* header{
+  width: 100%;
+  margin:0px;
+} */
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width:834px) {
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+
+.flexitem{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  padding:0px;
+  margin: 0px;
+}
+
+@media screen and (max-width:834px) {
+  .flexitem{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 5px;
+}
+
+
+
+.ul-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:0px;
+  margin:0px;
+}
+
+.p-stock, .p-size, .p-color, .p-amount{
+  margin: 5px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.item .search{
+  display:block;
+  margin-right:10px;
+  flex-wrap: nowrap;
+}
+
+/* .p-search{
+  display: flex;
+  
+} */
+
+.p-search::after{
+  content:"";
+  display:inline-block;
+  width:2px;
+  height:24px;
+  background-color:grey;
+  position:absolute;
+  margin-left:5px;
+ }
+
+ @media screen and (max-width:320px) {
+ .p-search::after{
+display: none;
+}
+}
+
+
+.p-sort{
+border: solid 1px black;
+background-color: white;
+align-items: center;
+margin:0px;
+padding: 0 0 0 10px;
+}
+
+.li{
+  margin: 0 5px;
+}
+
+.dli-arrow-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 0.05em;
+  height: 1em;
+  background: currentColor;
+  padding:0 0px 0 0;
+  margin: 0 15px 0 10px;
+}
+
+.dli-arrow-down::before {
+  content: '';
+  width: 0.4em;
+  height: 0.4em;
+  border: 0.05em solid currentColor;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  position: absolute;
+  left: 50%;
+  bottom: 0.05em;
+  box-sizing: border-box;
+}
+
+
