@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="header-list">
-      <div class="flex">
-        <div class="item search">
-            <p class="p p-search">絞り込み検索</p>
-        </div>
-        <div class="flexitem">
-          <div class="item i-stock">
-            <p class="p p-stock">在庫</p>
-            <ul class="ul-item">
-              <li class="li">在庫あり</li>
-              <li class="li">在庫なし</li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No.10 課題3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header_wrapper">
+        <div class="wrapper">
+          <div class="header-left">
+            <input type="checkbox" hidden id="check" />
+            <label for="check" id="label">
+              <div class="header-input">絞り込み</div>
+            </label>
+
+            <nav>
+              <ul class="nav_wrapper">
+                <li><strong>在庫</strong>　在庫あり 在庫なし</li>
+                <li><strong>サイズ</strong>　S M L</li>
+                <li><strong>色</strong>　赤 緑 白 黒</li>
+                <li>
+                  <strong>金額</strong>　0円
+                  <input type="range" min="0" max="30000" />30000円
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="item i-size">
-            <p class="p p-size">サイズ</p>
-            <ul class="ul-item">
-              <li class="li">S</li>
-              <li class="li">M</li>
-              <li class="li">L</li>
-            </ul>         
+          <div class="header-right">
+            <div class="sort">並び替え↓</div>
           </div>
-          <div class="item i-color">
-            <p class="p p-color">色</p>
-            <ul class="ul-item">
-              <li class="li">赤</li>
-              <li class="li">緑</li>
-              <li class="li">白</li>
-              <li class="li">黒</li>
-            </ul>            
-          </div>
-          <div class="item i-amount">
-            <p class="p p-amount">金額</p>
-            <span>0円</span>
-            <input type="range" name="sample1" style="width:150px" min="0" max="30000" step="1" value="5">
-            <span>30000円</span>
-          </div>
-        </div>
-        <div class="item i-sort">
-          <p class="p p-sort">並び替え<span class="dli-arrow-down"></span></p>
         </div>
       </div>
     </div>
-  </header>
-</body>
+  </body>
 </html>
